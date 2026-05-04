@@ -1,0 +1,13 @@
+services:
+  portal-pueblo-israel:
+    build: .
+    container_name: ibb_pueblo_israel_frontend
+    ports:
+      - "80:8080" # Servidor Ubuntu (80) -> Contenedor (8080)
+    restart: always
+    # Límites de recursos (Cero Desperdicio)
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 64M
