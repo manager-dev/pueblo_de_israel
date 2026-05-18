@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: ibb_pueblo_israel
     ports:
-      - "192.168.1.90:8081:8080" # Servidor Ubuntu (80) -> Contenedor (8080)
+      - "192.168.1.90:8080:80" # Servidor Ubuntu (80) -> Contenedor (8080)
     restart: always
     # L  mites de recursos (Cero Desperdicio)
     deploy:
